@@ -3,16 +3,16 @@ import 'package:get/get.dart';
 
 import 'lease_mgt_logic.dart';
 
-class BookFourView extends GetView<PageLogic> {
-  const BookFourView({super.key});
+class LeaseMgtView extends GetView<PageLogic> {
+  const LeaseMgtView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.parisian.value
-              ? const CircularProgressIndicator(color: Colors.blue)
+          () => controller.effertz.value
+              ? const CircularProgressIndicator(color: Colors.purple)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class BookFourView extends GetView<PageLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.filk();
+              controller.kwrviux();
             },
             icon: const Icon(
               Icons.restart_alt,
